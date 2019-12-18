@@ -1,11 +1,8 @@
 fun main(args: Array<String>) {
     check()
 }
-
-
-
 // Nombre de tours
-val tours=6
+val tours = 6
 
 // Valeur donnée par le premier joueur
 fun number1():Int{
@@ -14,12 +11,10 @@ fun number1():Int{
     return number1.toInt()
 }
 
-// function Stop
+// fonction Stop
 
 fun stop():Int{
-
     var arreter = readLine()!!
-
     if (arreter == "STOP"){
         return -1000
     }
@@ -30,8 +25,6 @@ fun stop():Int{
 
 fun check(){
     var number = number1()
-
-
   maBoucle@ for (i in 1..tours) {
     var tourRestant = (tours - i)
     if (i == tours){
@@ -59,16 +52,8 @@ fun check(){
             else -> {
                 println("Erreur !!")
             }
-
         }
-
-
-
         println("Il vous reste " + tourRestant + "tours.")
-
-
     }
   }
-
-
 }
